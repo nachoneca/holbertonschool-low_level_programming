@@ -8,9 +8,9 @@
  * Return: The error return
  */
 /* betty style doc for function main goes there */
-int main (void)
+int main(void)
 {
-	for(char x= 'a'; x <= 'z'; x++)
+	for (char x = 'a'; x <= 'z'; x++)
 	{
 	putchar(x);
 	putchar(' ');
