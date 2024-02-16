@@ -1,8 +1,7 @@
 #include "main.h"
 /**
-* main entry point
-*
-* No evuelve al ser una funcion
+*print_alphabet_x10 - imprimir 10 veces el alphabet
+*Return: ni idea
 */
 void print_alphabet_x10(void)
 {
