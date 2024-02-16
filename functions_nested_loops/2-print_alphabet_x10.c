@@ -5,7 +5,15 @@
 */
 void print_alphabet_x10(void)
 {
-int abc
+int abc;
+char letra;
 for (abc = 0; abc < 10; abc++)
-print_alphabet;
+{
+for (letra = 'a'; letra <= 'z'; letra++)
+{
+_putchar(letra);
+}
+}
+_putchar('\n');
+
 }
