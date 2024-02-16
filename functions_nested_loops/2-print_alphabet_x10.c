@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-*Lo que quiero realizar es un loop de n veces del abecedario
-*Haciendolo de esta manera utilizo la funcion de imprimir el abcedario
+* main entry point
+* No evuelve al ser una funcion
 */
 void print_alphabet_x10(void)
 {
