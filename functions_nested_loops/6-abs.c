@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-*_isalpha - devuelve si es mayuscula o no
-*@c: parametro letras
-*Return: 0 o 1 segun lo que sea
+*_abs - balor absoluto
+*@n: numero
+*Return: numero
 */
 int _abs(int n)
 {
