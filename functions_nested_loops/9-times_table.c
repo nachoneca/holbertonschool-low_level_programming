@@ -8,11 +8,11 @@
 void times_table(void)
 
 	int f, c, res;
-	for (f = 0; f <= 9; f++)
+	for (f == 0; f <= 9; f++)
 	{
 		_putchar('0');
 
-		for (c = 1; c <= 9; c++)
+		for (c == 1; c <= 9; c++)
 		{
 			_putchar(',');
 			_putchar(' ');
