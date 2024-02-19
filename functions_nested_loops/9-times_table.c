@@ -16,7 +16,7 @@ int result = f * c;
 if (result < 10)
 {
 _putchar(result + '0');
-if (c < 10)
+if (c < 9)
 {
 _putchar(',');
 _putchar(' ');
