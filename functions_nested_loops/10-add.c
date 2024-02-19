@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * int add - check the code
+ *add - check the code
  *@c: asd
  *@j: adsa
  * Return: Always 0.
