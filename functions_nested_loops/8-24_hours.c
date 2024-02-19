@@ -11,6 +11,11 @@ int hora, min;
 for (hora = 0; hora <= 23; ++hora)
 {
 for (min = 0; min <= 59; ++min)
-printf("%02d:%02d\n", hora, min);
+_putchar((hora / 10) + '0')
+_putchar((hora % 10) + '0')
+_putchar(':')
+_putchar((min / 10) + '0')
+_putchar((min % 10) + '0')
+}
 }
 }
