@@ -16,17 +16,24 @@ int result = f * c;
 if (result < 10)
 {
 _putchar(result + '0');
+if (c < 10)
+{
+_putchar(',');
 _putchar(' ');
+_putchar(' ');
+}
 }
 else
 {
 _putchar((result / 10) + '0');
 _putchar((result % 10) + '0');
-}
 if (c != 9)
+{
 _putchar(',');
 _putchar(' ');
 }
+}
 _putchar('\n');
+}
 }
 }
