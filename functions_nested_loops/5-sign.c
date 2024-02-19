@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 *_isalpha - devuelve si es mayuscula o no
-*@c: parametro letras
+*@n: parametro letras
 *Return: 0 o 1 segun lo que sea
 */
 int print_sign(int n)
