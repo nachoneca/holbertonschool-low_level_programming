@@ -25,9 +25,5 @@ if(n != 98)
 	}
 }
 else
-printf(n);
+printf("%d", j);
 }
-
-
-  
-    
