@@ -15,12 +15,17 @@ for (c = 0; c < 10; c++)
 int result = f * c;
 if (result < 0)
 _putchar(result + '0');
-_putchar(', ');
+if (f != 9)
+{
+_putchar(',');
+_putchar(' ');
+}
 else
 {
 _putchar((result / 10) + '0');
 _putchar((result % 10) + '0');
-_putchar(', ');
+_putchar(',');
+_putchar(' ');
 }
 }
 _putchar('\n');
