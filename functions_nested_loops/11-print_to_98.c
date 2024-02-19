@@ -26,5 +26,5 @@ int k;
 		}
 	else
 	printf("%d", j);
-printf("\n")
+printf("\n");
 }
