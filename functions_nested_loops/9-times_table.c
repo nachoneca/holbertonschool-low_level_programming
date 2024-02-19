@@ -8,13 +8,13 @@
 void times_table(void)
 
 	int f, c;
-	int res = f * c;
 	for (f = 0; f <= 9; f++)
 	{
 		_putchar('0');
 
 		for (c = 1; c <= 9; c++)
 		{
+			int res = f * c;
 			_putchar(',');
 			_putchar(' ');
 
