@@ -11,5 +11,5 @@ if (c < 0)
 _putchar('0' + (udig * -1));
 else
 _putchar('0' + udig);
-return (udig);
+return (0);
 }
