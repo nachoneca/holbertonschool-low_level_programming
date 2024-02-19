@@ -14,7 +14,7 @@ for (c = 0; c < 10; c++)
 {
 int result = f * c;
 if (result < 0)
-_printf(result + '0');
+_putchar(result + '0');
 else
 {
 _putchar((result / 10) + '0');
