@@ -7,9 +7,9 @@
 int print_last_digit(int c)
 {
 int udig = c % 10;
-if (udig < 0)
-printf("%d", (udig * -1));
+if (c < 0)
+_putchar('0' + (udig * -1));
 else
-printf("%d", udig);
+_putchar('0' + udig);
 return (udig);
 }
