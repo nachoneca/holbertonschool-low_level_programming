@@ -24,7 +24,5 @@ int k;
 		printf("%d, ",k);
 		}
 		}
-	else
-	printf("%d", j);
 printf("%d\n", j);
 }
