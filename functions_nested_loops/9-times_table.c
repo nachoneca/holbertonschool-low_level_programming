@@ -6,34 +6,27 @@
  */
 
 void times_table(void)
-{
-int f, c;
-for (f = 0; f < 10; f++)
-{
-for (c = 0; c < 10; c++)
-{
-int result = f * c;
-if (result < 10)
-{
-_putchar(result + '0');
-if (c < 9)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-}
-}
-else
-{
-_putchar((result / 10) + '0');
-_putchar((result % 10) + '0');
-if (c != 9)
-{
-_putchar(',');
-_putchar(' ');
-}
-}
-}
-_putchar('\n');
-}
-}
+
+	int f, c;
+	int res = f * c;
+
+	for (f = 0; f <= 9; f++)
+	{
+		_putchar('0');
+
+		for (c = 1; c <= 9; c++)
+		{
+			_putchar(',');
+			_putchar(' ');
+
+			res = f * c;
+
+			if (res <= 9)
+				_putchar(' ');
+			else
+				_putchar((res / 10) + '0');
+				_putchar((res % 10) + '0');
+		}
+		_putchar('\n');
+	}
+}		
