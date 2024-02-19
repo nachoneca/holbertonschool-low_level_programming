@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_isalpha - devuelve si es mayuscula o no
+*print_sign - devuelve si es mayuscula o no
 *@n: parametro letras
 *Return: 0 o 1 segun lo que sea
 */
