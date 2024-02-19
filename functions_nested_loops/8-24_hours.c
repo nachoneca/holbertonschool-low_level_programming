@@ -11,6 +11,7 @@ int hora, min;
 for (hora = 0; hora <= 23; ++hora)
 {
 for (min = 0; min <= 59; ++min)
+{
 _putchar((hora / 10) + '0');
 _putchar((hora % 10) + '0');
 _putchar(':');
