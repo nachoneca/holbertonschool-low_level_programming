@@ -9,7 +9,6 @@ void times_table(void)
 
 	int f, c;
 	int res = f * c;
-
 	for (f = 0; f <= 9; f++)
 	{
 		_putchar('0');
