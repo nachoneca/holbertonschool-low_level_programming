@@ -9,7 +9,7 @@ int print_last_digit(int c)
 int udig = c % 10;
 if (c < 0)
 {
-udig = c % 10 * -1;	
+udig = c % 10 * -1;
 _putchar('0' + udig);
 }
 else
