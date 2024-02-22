@@ -14,5 +14,5 @@ void print_array(int *a, int n)
 			if (size != '\0')
 				printf(", ");
 	}
-
+	printf("\n")
 }
