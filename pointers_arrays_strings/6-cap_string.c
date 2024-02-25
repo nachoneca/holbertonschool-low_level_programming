@@ -4,7 +4,7 @@
  *@str: name of str
  *Return: string
  */
-char* cap_string(char* str) 
+char *cap_string(char *str)
 {
 	int i;
 
@@ -12,13 +12,14 @@ char* cap_string(char* str)
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			putchar(toupper(str[i]));
+			str[i] = str[i] - 32;
 		}
 		else
 		{
 			putchar(str[i]);
 		}
-		for (; (str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'); i++)
+		for (; (str[i] >= 'a' && str[i] <= 'z') ||
+		(str[i] >= 'A' && str[i] <= 'Z'); i++)
 		{
 			putchar(str[i]);
 		}
