@@ -6,10 +6,15 @@
  */
 char *cap_string(char *str)
 {
-	int i;
+	int i, j;
 
 	for (i = 0; str[i]; i++)
 	{
+		if (str[i] < 'A' || (str[i] > 'Z' && str[i] < 'a') || str[i] > 'z')
+		{
+			putchar(str[i]);
+			continue;
+		}
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
 			str[i] = str[i] - 32;
@@ -18,10 +23,10 @@ char *cap_string(char *str)
 		{
 			putchar(str[i]);
 		}
-		for (; (str[i] >= 'a' && str[i] <= 'z') ||
-		(str[i] >= 'A' && str[i] <= 'Z'); i++)
+		for (j = i; (str[j] >= 'A' && str[j] <= 'Z') ||
+		(str[j] >= 'a' && str[j] <= 'z'); j++)
 		{
-			putchar(str[i]);
+			putchar(str[j]);
 		}
 		putchar(' ');
 	}
