@@ -6,38 +6,36 @@
  */
 char *cap_string(char *str)
 {
-	int i, j, first_word = 1;
+	int minus = 0;
+	int i;
 
-	for (i = 0; str[i]; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n')
+		if (str[i] == ' ' ||
+		str[i] == '\t' ||
+		str[i] == '\n' ||
+		str[i] == ',' ||
+		str[i] == ';' ||
+		str[i] == '.' ||
+		str[i] == '!' ||
+		str[i] == '?' ||
+		str[i] == '"' ||
+		str[i] == '(' ||
+		str[i] == ')' ||
+		str[i] == '{' ||
+		str[i] == '}')
 		{
-			first_word = 1;
+			minus = 1;
 		}
-		if (first_word && str[i] >= 'a' && str[i] <= 'z')
+		else if (str[i] >= 'a' && str[i] <= 'z' && minus == 1)
 		{
 			str[i] = str[i] - 32;
-			first_word = 0;
+			minus = 0;
 		}
-		if (str[i] < 'A' || (str[i] > 'Z' && str[i] < 'a') || str[i] > 'z')
+		else if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			putchar(str[i]);
-			continue;
+			minus = 0;
 		}
-		if (str[i] >= 'a' && str[i] <= 'z')
-		{
-			str[i] = str[i] - 32;
-		}
-		else
-		{
-			putchar(str[i]);
-		}
-		for (j = i; (str[j] >= 'A' && str[j] <= 'Z') ||
-		(str[j] >= 'a' && str[j] <= 'z'); j++)
-		{
-			putchar(str[j]);
-		}
-		putchar(' ');
 	}
 	return (str);
 }
