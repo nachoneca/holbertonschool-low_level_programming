@@ -18,6 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				c++;
 				coin = 1;
+				break
 			}
 		}
 		if (!coin)
