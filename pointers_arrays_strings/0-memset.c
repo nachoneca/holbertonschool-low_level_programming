@@ -3,7 +3,8 @@
  *_memset - asign char b to the array
  *@s: name array
  *@b: asigned memory
- *@n: number of times that changes in the array 
+ *@n: number of times that changes in the array
+ *Return: s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
