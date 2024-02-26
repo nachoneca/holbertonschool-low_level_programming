@@ -1,0 +1,15 @@
+#include"main.h"
+/**
+ *_memset - asign char b to the array
+ *@s: name array
+ *@b: asigned memory
+ *@n: number of times that changes in the array 
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int a;
+
+	for (a = 0; a < n; a++)
+		s[a] = b;
+	return (s);
+}
