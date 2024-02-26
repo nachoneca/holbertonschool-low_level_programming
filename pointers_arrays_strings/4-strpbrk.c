@@ -1,8 +1,9 @@
 #include"main.h"
 /**
- *
- *
- *
+ *_strpbrk - compare one string to anoher and when one letter matches print the rest
+ *@s: name of main str
+ *@accept: name of str to check
+ *Return: first possition when main srt and the other matches
  */
 char *_strpbrk(char *s, char *accept)
 {
