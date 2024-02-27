@@ -3,6 +3,7 @@
  *_pow_recursion - multiplies x, y times
  *@x: the number we want to multyply
  *@y: the numbers of times we multiply y
+ *Return: x elevated y times
  */
 int _pow_recursion(int x, int y)
 {
