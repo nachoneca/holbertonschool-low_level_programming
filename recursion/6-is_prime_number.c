@@ -1,4 +1,5 @@
 #include "main.h"
+int is_prime(int n, int i, int limit);
 /**
  * is_prime_number - func that returns 1 if a num is a prime num, 0 otherwise
  * @n: number for input
@@ -10,7 +11,7 @@ int is_prime_number(int n)
 }
 
 /**
- *  helper_prime - blank
+ *  is_prime - blank
  * @n: checkl
  * @i: for the increment
  * @limit: stop

@@ -13,7 +13,7 @@ int _sqrt_recursion(int n)
 	if ((n == 0) || (n == 1))
 		return (n);
 
-	return (_raizde(n, 1));
+	return (_raiz(n, 1));
 
 }
 
@@ -29,5 +29,5 @@ int _raiz(int a, int b)
 	if (b * b == a)
 		return (b);
 
-	return (_raizde(a, b + 1));
+	return (_raiz(a, b + 1));
 }
