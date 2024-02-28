@@ -18,7 +18,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- *_raizde - find the root of a
+ *_raiz - find the root of a
  *@a: entry int
  *@b: entry int
  *Return: root of a
