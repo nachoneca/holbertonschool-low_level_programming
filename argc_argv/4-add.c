@@ -11,17 +11,15 @@ int main(int argc, char *argv[])
 {
 	int a = 0, res = 0;
 
-	if (argc == 0)
-		printf("0\n");
-	for (a = 1; argv[a]; a++)
+	for (a = 1; a < argc; a++)
 	{
-		if (!isdigit(argv[a]))
+		if (argv[a][0] < 48 || argv[a][0] > 57)
 		{
 			printf("Error\n");
 			return (1);
 		}
 		res += atoi(argv[a]);
 	}
-	printf("%i\n", res);
+	printf("%d\n", res);
 	return (0);
 }
