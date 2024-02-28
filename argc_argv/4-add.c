@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 0)
 		printf("0\n");
-	for (; argv[a]; a++)
+	for (a = 1; argv[a]; a++)
 	{
 		if (!isdigit(argv[a]))
 		{
