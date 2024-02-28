@@ -1,5 +1,6 @@
 #include <ctype.h>
 #include"main.h"
+#include<stdlib.h>
 /**
  *main - adds all numbers of the arguments
  *@argc: number of arguments
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		res = res + a;
+		res += atoi(argv[a]);
 	}
 	printf("%i\n", res);
 	return (0);
