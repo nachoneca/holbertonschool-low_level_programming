@@ -28,5 +28,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		unidos[a++] = s2[l2];
 	}
+	unidos[a] = '\0';
 	return (unidos);
 }
