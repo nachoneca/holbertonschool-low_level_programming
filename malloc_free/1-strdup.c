@@ -9,13 +9,21 @@ char *_strdup(char *str)
 	int size;
 	char *duplicated;
 
-	if (str == NULL || str == 0)
+	if (str == NULL)
 		return (NULL);
+
 	for(size = 0; str[size] != '\0'; size++)
-	duplicated = (char *)malloc((size + 1) * sizeof(char));
+		;
+
+	duplicated = malloc(sizeof(char) * (size + 1));
+
 	if (duplicated == NULL)
 		return (NULL);
+
 	for (size = 0; str[size] != '\0'; size++)
 		duplicated[size] = str[size];
+	
+	duplicated[size] = '\0';
+
 	return (duplicated);
 }
