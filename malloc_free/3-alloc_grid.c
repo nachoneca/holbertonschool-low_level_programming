@@ -26,7 +26,7 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 		for (b = 0; b < width; b++)
-			mtz[b] = 0;
+			mtz[a][b] = 0;
 	}
 	return (mtz);
 }
