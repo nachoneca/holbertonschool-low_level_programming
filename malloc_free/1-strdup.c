@@ -6,11 +6,13 @@
  */
 char *_strdup(char *str)
 {
+	int size;
 	char *duplicated;
 
 	if (str == NULL)
 		return (NULL);
-	duplicated = (char *)malloc((strlen(str) + 1) * sizeof(char));
+	for(size = 0; str[size] != '\0'; size++)
+	duplicated = (char *)malloc((size + 1) * sizeof(char));
 	if (duplicated == NULL)
 		return (NULL);
 	strcpy(duplicated, str);
