@@ -18,7 +18,7 @@ char *str_concat(char *s1, char *s2)
 	
 	for (l2 = 0; s2[l2] != '\0'; l2++)
 
-	unidos = malloc((l1 + l2 + 1) * sizeof(char));
+	unidos = malloc((l1 + l2) * sizeof(char));
 
 	for (l1 = 0; s1[l1] != '\0'; l1++)
 	{
