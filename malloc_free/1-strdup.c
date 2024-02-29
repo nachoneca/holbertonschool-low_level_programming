@@ -6,7 +6,7 @@
  */
 char *_strdup(char *str)
 {
-	int size, a = 0;
+	int size;
 	char *duplicated;
 
 	if (str == NULL)
@@ -16,6 +16,6 @@ char *_strdup(char *str)
 	if (duplicated == NULL)
 		return (NULL);
 	for (size = 0; str[size] != '\0'; size++)
-		str[size] = duplicated[a];
+		duplicated[size] = str[size];
 	return (duplicated);
 }
