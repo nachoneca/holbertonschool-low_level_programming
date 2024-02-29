@@ -9,7 +9,7 @@ char *_strdup(char *str)
 	int size;
 	char *duplicated;
 
-	if (str == NULL)
+	if (str == NULL || str == 0)
 		return (NULL);
 	for(size = 0; str[size] != '\0'; size++)
 	duplicated = (char *)malloc((size + 1) * sizeof(char));
