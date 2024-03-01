@@ -8,7 +8,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int a, b, c, unidos;
+	unsigned int a, b, c = 0, unidos;
 	char *res;
 
 	if (s1 == NULL)
@@ -24,8 +24,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unidos = a + n;
 
 	res = malloc((unidos + 1) * sizeof(char));
-		if (res == NULL)
-			return (NULL);
+	if (res == NULL)
+		return (NULL);
 	for (a = 0; s1[a] != '\0'; a++)
 		res[c++] = s1[a];
 
