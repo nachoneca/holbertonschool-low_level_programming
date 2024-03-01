@@ -28,7 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	unidos = a + n;
 
-	res = malloc((unidos) * sizeof(char));
+	res = malloc((unidos + 1) * sizeof(char));
 	if (res == NULL)
 		return (NULL);
 
@@ -38,5 +38,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (b = 0; b < n; b++)
 		res[c++] = s2[b];
 
+	res[c] = '\0';
 	return (res);
 }
