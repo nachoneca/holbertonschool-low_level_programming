@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (a = 0; s1[a] != '\0'; a++)
 		res[c++] = s1[a];
 
-	for (b = 0; b <= n; b++)
+	for (b = 0; b < n; b++)
 		res[c++] = s2[b];
 
 	return (res);
