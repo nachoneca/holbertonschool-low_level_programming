@@ -20,20 +20,26 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (ptrnd == NULL)
 		return (NULL);
 
-	ptrnd->name = malloc((a + 1) * sizeof(ptrnd->name));
+	ptrnd->name = malloc((a + 1) * sizeof(char));
 	if (ptrnd->name == NULL)
+	{
+		free(ptrnd);
 		return (NULL);
+	}
 
-	for (g = 0; g < a; g++)
+	for (g = 0; g <= a; g++)
 		ptrnd->name[g] = name[g];
 	
 	ptrnd->age = age;
 
-	ptrnd->owner = malloc((b + 1) * sizeof(ptrnd->owner));
+	ptrnd->owner = malloc((b + 1) * sizeof(char));
 	if (ptrnd->owner == NULL)
+	{
+		free(ptrnd);
 		return (NULL);
+	}
 
-	for (g = 0; g < b; g++)
+	for (g = 0; g <= b; g++)
 		ptrnd->owner[g] = owner[g];
 
 	return (ptrnd);
