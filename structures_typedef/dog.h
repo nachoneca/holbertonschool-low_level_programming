@@ -8,13 +8,13 @@
  *    * @owner: the owner of the dog (char *)
  *Description: structure that represents a dogs, name, age and owner
  */
-typedef struct dog dog_t;
 struct dog
 {
 	char *name;
 	char *owner;
 	float age;
 };
+typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
