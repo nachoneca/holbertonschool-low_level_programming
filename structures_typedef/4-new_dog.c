@@ -35,13 +35,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (g = 0; g < b; g++)
 		ptrnd->owner[g] = owner[g];
 
-	if (ptrnd->name == NULL || ptrnd->owner == NULL)
-	{
-		free(ptrnd->name);
-		free(ptrnd->owner);
-		free(ptrnd);
-		return (NULL);
-	}
 	ptrnd->age = age;
 	return (ptrnd);
 }
