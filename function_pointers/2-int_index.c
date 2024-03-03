@@ -5,7 +5,7 @@
  *@array: array of int
  *@size: size of the array
  *@cmp: function that compares elements in the array and give t or f
- *
+ *Return: if not found matches return -1, if yes, return i
  *
  */
 int int_index(int *array, int size, int (*cmp)(int))
