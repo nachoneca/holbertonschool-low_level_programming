@@ -4,7 +4,7 @@
  *that will complete the action of the function cmp
  *@array: array of int
  *@size: size of the array
- *cmp: function that compares elements in the array and give t or f
+ *@cmp: function that compares elements in the array and give t or f
  *
  *
  */
