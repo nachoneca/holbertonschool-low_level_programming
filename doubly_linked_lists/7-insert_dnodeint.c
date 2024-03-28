@@ -4,6 +4,7 @@
  *@h: pointer that points at the start of the chain
  *@idx: number of the chain that wanted to be inserted the new node
  *@n: n is the number that will carry the new node
+ *Return: new node
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
@@ -15,7 +16,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (add_dnodeint(h, n));
 	aux = *h;
 	while (aux != NULL && i < idx - 1)
-	{	
+	{
 		aux = aux->next;
 		i++;
 	}
