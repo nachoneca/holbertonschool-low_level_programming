@@ -14,8 +14,11 @@ int create_file(const char *filename, char *text_content)
 	f_descriptor = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	if (f_descriptor == -1)
 		return (-1);
-	for (; text_content[i] != '\0'; i++)
-		;
+	if (text_content != NULL)
+	{
+		for (; text_content[i] != '\0'; i++)
+			;
+	}
 	f_w = write(f_descriptor, text_content, i);
 	if (f_w == -1)
 		return (-1);
