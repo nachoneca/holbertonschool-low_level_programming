@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int file_to, file_from, cls_ft, cls_ff, f_reader f_w;
+	int file_to, file_from, cls_ft, cls_ff, f_reader, f_w;
 	char str[1024];
 
 	if (argc != 3)
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 	cls_ff = close(file_from);
 	if (cls_ft == -1 || cls_ff == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n");
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", -1);
 		exit(100);
 	}
 	return (0);
