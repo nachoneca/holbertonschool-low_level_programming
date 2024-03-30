@@ -18,9 +18,9 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	file_from = open(argv[1], O_RDONLY);
-	/*argv[1] is the file we want to copy*/
+
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	/*argv[2] is the file we want to recive the copy*/
+	
 	f_reader = read(file_from, str, 1024);
 	if (f_reader == -1)
 	{
